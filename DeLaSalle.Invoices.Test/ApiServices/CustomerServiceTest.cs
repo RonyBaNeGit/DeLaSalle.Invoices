@@ -27,7 +27,7 @@ namespace DeLaSalle.Invoices.Test.ApiServices;
 
                 var mock = new Mock<ICustomerRepository>();
 
-                mock.Setup(m => m.GetAllAsync()).Returns(Task.FromResult<excpected>);
+                mock.Setup(m => m.GetAllAsync()).Returns(Task.FromResult(expected));
 
                  var sut = new CustomerService(mock.Object);
 
