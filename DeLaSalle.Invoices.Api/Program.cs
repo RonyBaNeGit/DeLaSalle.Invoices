@@ -15,7 +15,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ICustomerService,CustomerService>();
+//builder.Services.AddSingleton<ICustomerRepository,CustomerInMemoryRepository>();
 builder.Services.AddScoped<ICustomerRepository,CustomerInMemoryRepository>();
+
 
 var app = builder.Build();
 
