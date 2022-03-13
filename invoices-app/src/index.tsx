@@ -1,17 +1,8 @@
-import React from 'react';
+import React,{Fragment} from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './Backup/App';
-import reportWebVitals from './Backup/reportWebVitals';
+import  App from './App';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+var x = 1;
+//const app = <Fragment> <div><h1>Hello World {x}</h1><h2>Hello World 2</h2></div></Fragment>;
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<App title="TitleText" text="text2" />, document.getElementById('root'));
